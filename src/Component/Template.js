@@ -6,7 +6,7 @@ const Template = () => {
   const [selectedIndex, setSelectedIndex] = React.useState(1);
 
   const handleListItemClick = (event, index) => {
-    console.log("Selected");
+    console.log(event.target.outerText);
     setSelectedIndex(index);
   };
   return (
